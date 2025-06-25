@@ -1,0 +1,125 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Per consentire lo scorrimento verticale su schermi piccoli */
+    padding: 10px; /* Aggiunta di padding per evitare che il contenuto tocchi i bordi */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Limita la larghezza massima su schermi più grandi */
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 50%; /* Riduce la dimensione del logo sui dispositivi mobili */
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    color: #333333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 0.8em 0;
+    text-align: left;
+}
+
+a {
+    color: #7c4dff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #7c4dff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    min-width: 70px;
+}
+
+.button:hover {
+    background-color: #5e35b1;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #acacac;
+}
+
+.support-img {
+    width: 100%; /* Rende l'immagine responsive */
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+/* Media queries per schermi più piccoli */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Riduce il padding per schermi più piccoli */
+    }
+
+    .logo {
+        width: 80px; /* Riduce ulteriormente la dimensione del logo */
+    }
+
+    .button {
+        padding: 8px 16px; /* Riduce il padding dei pulsanti */
+        font-size: 0.9em; /* Riduce la dimensione del font dei pulsanti */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Riduce la dimensione del font per gli header */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Riduce la dimensione del font per gli header secondari */
+    }
+
+    .support-img {
+        margin-top: 30px; /* Riduce lo spazio sopra le immagini di supporto */
+    }
+}
